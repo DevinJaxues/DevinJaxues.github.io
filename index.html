@@ -1,163 +1,177 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>My Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- START NAV -->
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Devin Monsen</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="https://www.linkedin.com/in/devin-monsen-541054163/">LinkedIn</a></li>
-								<li><a href="https://github.com/DevinJaxues">Github</a></li>
-							</ul>
-						</nav>
-					</header>
-				<!-- Main -->
-					<div id="main">
+    <!-- END NAV -->
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="https://github.com/DevinJaxues/Mapping_Earthquakes">Earthquake Mapping</a></h2>
-										<p>This project is an interactive webpage providing users a way to research earthquakes. Features provided include: magnitude, location, and tectonic plate location</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2022-08-31">August 31, 2022</time>
-										<a href="https://www.linkedin.com/in/devin-monsen-541054163/" class="author"><span class="name">Devin Monsen</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-								<a href="https://github.com/DevinJaxues/Mapping_Earthquakes" class="image featured"><img src="images/pic02.JPG" alt="" /></a>
-								<p>The objective of this project was to create a Leaflet map that achieved 3 main goals being access to GeoJSON data, interactiveness, and visualize said data. Which I was able to achieve using JavaScript, d3, GeoJSON data provided by https://github.com/fraxen/tectonicplates, and lastly mapbox API.</p>
-							</article>
+    <!-- START WELCOME SECTION -->
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="https://github.com/DevinJaxues/Credit_Risk_Analysis">Customer Credit Risk Analysis</a></h2>
-										<p>In this project I created a Jupyter notebook to teach a supervised machine to determining the risk of a customer requesting a loan</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-10-25">December 7, 2022</time>
-										<a href="https://www.linkedin.com/in/devin-monsen-541054163/" class="author"><span class="name">Devin Monsen</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-								<a href="https://github.com/DevinJaxues/Credit_Risk_Analysis" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<p>To calculate credit risk based off customers requesting loans. Using scikit, imbalanced-learn, SMOTE, EasyEnsembleClassifier, RandomOverSampler packages and algorithms just to name of few. I then dove into the database, created the features off of customers information. Which set the building blocks for a logistic regression for a supervised machine.</p>
-							</article>
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey I'm Devin Monsen!</h1>
+      <p>I am a Full Stack Developer based in Salt Lake City. I have skills in Python, JavaScript, HTML, CSS, JSON, R, SQL and Tableau.
+        In my free time I enjoy skiing, CodeWars, reading and exercise!</p>
+    </section>
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="https://github.com/DevinJaxues/UFO_Sightings">UFO Sightings</a></h2>
-										<p>An interactive webpage containing data of UFO sightings around the world</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2022-09-04">October 04, 2022</time>
-										<a href="https://www.linkedin.com/in/devin-monsen-541054163/" class="author"><span class="name">Devin Monsen</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-								<a href="https://github.com/DevinJaxues/UFO_Sightings" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<p>This project provieds a webpage that a user can research UFO sightings on. Allowing the user to filter the sightings by date, city, state, country and shape of UFO.</p>
-							</article>
-							
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="https://github.com/DevinJaxues/bikesharing">New York Citi Bikes</a></h2>
-										<p>This project is a visualization dashboard of Citi Bike data in New York City</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2022-10-28">November 28, 2022</time>
-										<a href="https://www.linkedin.com/in/devin-monsen-541054163/" class="author"><span class="name">Devin Monsen</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-								<a href="https://github.com/DevinJaxues/bikesharing" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<p>In this analysis my objective was to take a data set and answer questions using visualizations. When it came to the Citi Bike data, I used gender, location, membership and useage indicators to tell a story using Tableau.</p>
-							</article>
+    <!-- END WELCOME SECTION -->
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="https://github.com/AndiCam88/final_project">Music Mood Analysis</a></h2>
-									<p>This project is a webpage designed to allow a user to look up a song and return the song's statistics of danceability, energy, loudness, valence, tempo, acousticness and mood.</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2022-12-30">December 30, 2022</time>
-									<a href="https://github.com/AndiCam88/final_project" class="author"><span class="name">Team Project</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<a href="https://github.com/AndiCam88/final_project" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<p>The goal of this project was predict the mood of songs and group them by moods. Ideally intergrated into a music database so users could pick a mood and have a playlist compiled for them. My role in this project was designing the unsupervised machine to predict the moods using Spotify's public 1 million+ song databse. Using the sklearn, pandas and seaborn libraries I was able to achieve this. Firstly, started with the ETL process. Then I used Kmeans clustering and an elbow curve to find the optimal fitting for the machine model. Lastly clustered the sample set, collaborated with my team to decide on cluster moods then labeled our groups.</p>
-						</article>						
-							
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="https://github.com/DevinJaxues/Amazon_Vine_Analysis">Amazon Vine Program Analysis</a></h2>
-									<p>Amazon started a review program paying customers to use and review products with a new branch called Vine. My purpose for this project was to analyze the data of the paid and unpaid reviews and return statistics to determine the value of the new Vine program.</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2022-12-30">December 30, 2022</time>
-									<a href="https://www.linkedin.com/in/devin-monsen-541054163/" class="author"><span class="name">Devin Monsen</span><img src="images/avatar.jpg" alt="" /></a>
-								</div>
-							</header>
-							<a href="https://github.com/DevinJaxues/Amazon_Vine_Analysis" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-							<p>In this analysis I took a dataset from Amazon's AWS. I then performed the ETL process. Loaded the dataset into an AWS server. Connected that AWS to PGAdmin. Extracted the data in a Jupyter Notebook. Transforming the dataset into multiple dataframes using PySpark. And extracting statistics from those dataframes. Lastly, loading the new dataframes into tables in PGAdmin using a Spark server.</p>
-						</article>	
+    <!-- START PROJECTS SECTION -->
 
-					</div>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">My Projects</h2>
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+      <div class="projects-grid">
+        <a
+          href="https://github.com/DevinJaxues/Mapping_Earthquakes"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="images/eqmap.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Earthquake Mapper
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/DevinJaxues/Amazon_Vine_Analysis"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="images/amazon_vine.JPG"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Amazon Review Program
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/DevinJaxues/UFO_Sightings"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="images/ufo_sight.JPG"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            UFO Sighting Scraper
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/DevinJaxues/Belly_Button_Biodiversity"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="images/bbd.JPG"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Patient Bacteria Diversity Analysis
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/DevinJaxues/bikesharing"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="images/bike_useage.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            New York Citi Bike Analysis
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/DevinJaxues/World_Weather_Analysis"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="images/weather.JPG"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Vacation Location Finder
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
 
-						<!-- Intro -->
-							<section id="intro">
-								<a class="logo"><img src="images/logo.jpg" alt="" /></a>
-								<header>
-									<h2>Devin Monsen</h2>
-									<p>Junior Data Analyst & Front End Developer</a></p>
-								</header>
-							</section>
+      <a
+        href="https://github.com/DevinJaxues"
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i
+      ></a>
+    </section>
 
-						<!-- About -->
-							<section class="blurb">
-								<h2>About</h2>
-								<p>I love the nitty-gritty process of finding the what, when, where and why and displaying it in a digestable, fun and aesthetically pleasing form. In my free time I enjoy skiing, CodeWars, standup comedy open mic and exercise!</p>
-							</section>
+    <!-- END PROJECTS SECTION -->
 
-						<!-- Footer -->
-							<section id="footer">
-								<ul class="icons">
-									<li><a href="https://www.instagram.com/jaxues/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> 
-									<li><a href="mailto:monsendevin@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
+    <!-- START CONTACT SECTION -->
 
-					</section>
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Beep Me!</h2>
+        <p>Contact forms</p>
+      </div>
+      <div class="contact-links">
+ 
+        <a
+          id="profile-link"
+          href="https://github.com/DevinJaxues"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/devin-monsen-541054163/"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="mailto:monsendevin@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
+        >
+      </div>
+    </section>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- END CONTACT SECTION -->
 </html>
