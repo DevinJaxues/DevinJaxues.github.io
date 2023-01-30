@@ -1,9 +1,24 @@
+html {
+  height: 100%;
+}
+
+/*Set variables for light and dark mode */
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #000000;
+}
+
+.dark-mode {
+  --primary-color: #000000;
+  --secondary-color: #f8f8f8;
+}
+
 /* Set background stylizing and size */
 body {
-    min-width: 100%;
     min-height: 100vh;
-    background : radial-gradient(rgb(0, 0, 0, 0.4) 2px, transparent 2px) 0 0 / 35px 35px;
+    background : radial-gradient( var(--secondary-color) 2px, transparent 2px) 0 0 / 35px 35px;
     font-family: "0Arame";
+    background-color: var(--primary-color)
 }
 
 /* Import for Arame Font*/
@@ -24,7 +39,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
     grid-template-rows: 400px 1fr;
   }
   .container > div {
-    border: 1.5px dashed rgb(0, 0, 0);
+    border: 1.5px dashed var(--secondary-color);
   }
   
   .about-me {
@@ -33,6 +48,12 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
   
   .header-2 {
     grid-area: header-2;
+  }
+
+  #icon {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 1250px;
   }
 
   .contact {
@@ -47,10 +68,9 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
-    height: 90%;
-    background-color: rgba(53, 52, 52, 0.466);
+    height: 94%;
+    background-color: rgba(126, 126, 126, 0.856);
     border-radius: 12px;
-    border: 1px transparent rgba(54, 54, 54, 0.027);
   }
 
   /* Stylize text and create cursor for typewriter animation */
@@ -60,6 +80,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
     margin-left: 5px;
     width: 52vh;
     font-weight: 700;
+    color: var(--secondary-color);
     font-size: 50px;
     animation: typing 2s steps(21), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -87,6 +108,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
     font-weight: 700;
     font-size: 24px;
     max-width: 95%;
+    color: var(--secondary-color);
   }
 
   .certs {
@@ -95,14 +117,16 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
     margin-bottom: 3px;
     margin-left: 5px;
     text-decoration: underline;
+    color: var(--secondary-color);
   }
 
   .cert-link {
     margin-left: 5px;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: inline;
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
   }
   
   a{
@@ -113,4 +137,8 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
   a:hover {
     text-decoration: underline;
     text-shadow: 1px 1px 1px #555;
+  }
+
+  object {
+    margin-right: 82px;
   }
