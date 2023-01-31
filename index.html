@@ -9,25 +9,24 @@
     </head>
     <body>
         <div class="container">
+            <img src="moon.png" id="icon" onClick="darkMode()">
             <div class="about-me">
                 <div class="card">
                     <h1 class="typewriter">Hi! I'm Devin Monsen.</h1>
-                    <p class="description">I'm a Full-Stack developer and certified Data Analyst through the University of Utah. If I'm not coding you can find me reading, blogging or skiing!</p>
+                    <p class="description">I'm a Full-Stack developer and certified Data Analyst through the University of Utah. If I'm not coding you can find me reading, blogging or snowboarding!</p>
                     <p class="certs">Links To Certifications:</p>
                     <a class="link" href="https://www.credly.com/badges/68a7d18b-d337-4e2a-b14f-bafbf8eeb179/linked_in?t=roz46c" target="_blank">
-                    <p class="cert-link"> Data Analytics and Vizualization |</p>
+                    <p class="cert-link"> Data Analytics and Vizualization</p>
                     </a>
                     <a class="link" href="https://www.freecodecamp.org/certification/Jaxues/responsive-web-design" target="_blank">
                     <p class="cert-link">Responsive Web Design</p>
                     </a>
-                    <object data="data.svg" width="185" height="130" alt="SVG art of data analytics"> </object>
-                    <object data="web_design.svg" width="185" height="130" alt="SVG art of web page"> </object>
+                    <object class="svg" data="data.svg" width="185" height="130" alt="SVG art of data analytics"> </object>
+                    <object class="svg" data="web_design.svg" width="185" height="130" alt="SVG art of web page"> </object>
                 </div>
             </div>
 
             <div class="header-2">
-                <img src="moon.png" id="icon" onClick="darkMode()">
-
             </div>
 
             <div class="contact">
@@ -38,7 +37,7 @@
 
             </div>
 
-            <!--Create Dark/Light Mode toggler-->
+            <!--Create JavaScript Dark/Light Mode toggler-->
             <script>
                 function darkMode() {
                     var element = document.body;

@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-}
-
 /*Set variables for light and dark mode */
 :root {
   --primary-color: #f8f8f8;
@@ -16,76 +12,69 @@ html {
 /* Set background stylizing and size */
 body {
     min-height: 100vh;
+    max-width: 100vh;
     background : radial-gradient( var(--secondary-color) 2px, transparent 2px) 0 0 / 35px 35px;
     font-family: "0Arame";
     background-color: var(--primary-color)
 }
 
-/* Import for Arame Font*/
-@import 
-url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
-@font-face {
-    font-family: "0Arame"; src: url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.eot"); src: url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.woff") format("woff"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.svg#0Arame") format("svg"); 
-}
+/* Style for mobile */
+@media only screen and (max-device-width: 390px){
 
-/*Create gride for about me, contact and projects */
-.container {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas: "about-me header-2"
-    "contact projects";
-    grid-template-columns: 587px 1fr;
-    grid-template-rows: 400px 1fr;
-  }
-  .container > div {
-    border: 1.5px dashed var(--secondary-color);
-  }
   
-  .about-me {
-    grid-area: about-me;
-  }
-  
-  .header-2 {
-    grid-area: header-2;
-  }
 
   #icon {
     width: 40px;
     cursor: pointer;
-    margin-left: 1250px;
-  }
-
-  .contact {
-    grid-area: contact;
-  }
-
-  .projects {
-    grid-area: projects;
+    margin-left: 50px;
   }
 
   .card {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    height: 94%;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    height: 32vh;
+    width: 373px;
     background-color: rgba(126, 126, 126, 0.856);
     border-radius: 12px;
+    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.6);
   }
 
-  /* Stylize text and create cursor for typewriter animation */
-  .typewriter {
-    margin-top: 5px;
-    margin-bottom: 0px;
+  .svg{
+    display: none;
+  }
+
+  .description {
+    margin-top: 0;
     margin-left: 5px;
-    width: 52vh;
-    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    max-width: 95%;
     color: var(--secondary-color);
-    font-size: 50px;
+  }
+
+  #icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 155px;
+  }
+
+  .typewriter {
+    margin-top: 2px;
+    margin-bottom: 1px;
+    margin-left: 30px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 30px;
+    max-width: 300px;
     animation: typing 2s steps(21), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid;
+    text-align: center;
   }
     /* Using animation tags create key frames for blinking cursor */
   @keyframes typing {
@@ -94,51 +83,153 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
     }
   }
 
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-
-  .description {
-    margin-top: 0;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    text-align: left;
-    font-weight: 700;
-    font-size: 24px;
-    max-width: 95%;
-    color: var(--secondary-color);
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
 
   .certs {
-    font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 3px;
-    margin-left: 5px;
+    font-weight: 580;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 0px;
     text-decoration: underline;
     color: var(--secondary-color);
+    text-align: center;
   }
 
   .cert-link {
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    display: inline;
+    margin-top: 10px;
+    margin-bottom: 12px;
     text-decoration: none;
     color: var(--secondary-color);
-  }
-  
-  a{
-    text-decoration: none;
-    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
   }
 
-  a:hover {
-    text-decoration: underline;
-    text-shadow: 1px 1px 1px #555;
-  }
+}
+/*End Mobile Styling*/
 
-  object {
-    margin-right: 82px;
-  }
+/* Import for Arame Font*/
+@import 
+url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
+@font-face {
+    font-family: "0Arame"; src: url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.eot"); src: url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.woff") format("woff"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/548e77e130ea884c764acabe1ba1ad63.svg#0Arame") format("svg"); 
+}
+
+@media only screen and (min-device-width: 1200px){
+  /*Create grid for about me, contact and projects */
+  .container {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-areas: "about-me header-2"
+      "contact projects";
+      grid-template-columns: 587px 1fr;
+      grid-template-rows: 400px 1fr;
+    }
+    .container > div {
+      border: 1.5px dashed var(--secondary-color);
+    }
+    
+    .about-me {
+      grid-area: about-me;
+    }
+    
+    .header-2 {
+      grid-area: header-2;
+    }
+
+    #icon {
+      width: 40px;
+      cursor: pointer;
+      margin-left: 1250px;
+    }
+
+    .contact {
+      grid-area: contact;
+    }
+
+    .projects {
+      grid-area: projects;
+    }
+
+    .card {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      height: 94%;
+      background-color: rgba(126, 126, 126, 0.856);
+      border-radius: 12px;
+    }
+
+    /* Stylize text and create cursor for typewriter animation */
+    .typewriter {
+      margin-top: 5px;
+      margin-bottom: 0px;
+      margin-left: 5px;
+      width: 52vh;
+      font-weight: 600;
+      color: var(--secondary-color);
+      font-size: 50px;
+      animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid;
+    }
+      /* Using animation tags create key frames for blinking cursor */
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+
+    .description {
+      margin-top: 0;
+      margin-left: 5px;
+      margin-bottom: 5px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 24px;
+      max-width: 95%;
+      color: var(--secondary-color);
+    }
+
+    .certs {
+      font-weight: 600;
+      margin-top: 0px;
+      margin-bottom: 3px;
+      margin-left: 5px;
+      text-decoration: underline;
+      color: var(--secondary-color);
+    }
+
+    .cert-link {
+      margin-left: 5px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: inline;
+      text-decoration: none;
+      color: var(--secondary-color);
+    }
+    
+    a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-shadow: 1px 1px 1px #555;
+    }
+
+    object {
+      margin-right: 82px;
+    }
+}
