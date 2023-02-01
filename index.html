@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="header">
-            <img src="moon.png" id="icon" onClick="darkMode()">
+            <img src="images/moon.png" id="icon" onClick="darkMode()">
             <h2>Light/Dark mode</h2>
         </div>
         <div class="container">
@@ -24,32 +24,58 @@
                     <a class="link" href="https://www.freecodecamp.org/certification/Jaxues/responsive-web-design" target="_blank">
                     <p class="cert-link">Responsive Web Design</p>
                     </a>
-                    <object class="svg" data="data.svg" width="170" height="150" alt="SVG art of data analytics"> </object>
-                    <object class="svg" data="web_design.svg" width="170" height="150" alt="SVG art of web page"> </object>
+                    <object class="svg" data="images/data.svg" width="170" height="150" alt="SVG art of data analytics"> </object>
+                    <object class="svg" data="images/web_design.svg" width="170" height="150" alt="SVG art of web page"> </object>
                 </div>
             </div>
 
             <div class="skills">
                 <div class="card-2">
-                    <h1>My Skill Set Includes:</h1>
-                    <img src="images/git.png" class="skillcons">
-                    <img src="images/jupyter.png" class="skillcons">
-                    <img src="images/flask.png" class="skillcons">
-                    <img src="images/python.png" class="skillcons">
-                    <img src="images/R.png" class="skillcons">
-                    <img src="images/webdev.png" class="skillcons">
-                    <img src="images/css.png" class="skillcons">
-                    <img src="images/js.png" class="skillcons">
-                    <img src="images/json.png" class="skillcons">
-                    <img src="images/bootstrap.png" class="skillcons">
-                    <img src="images/mongodb.png" class="skillcons">
-                    <img src="images/scipy.png" class="skillcons">
-                    <img src="images/pandas.png" class="skillcons">
+                    <p class="skill-h">My Skill Set Includes:</p>
+                    <img src="images/git.png" class="skillcons" alt="git logo">
+                    <img src="images/jupyter.png" class="skillcons" alt="jupyter logo">
+                    <img src="images/flask.png" class="skillcons" alt="flask logo">
+                    <img src="images/python.png" class="skillcons" alt="python logo">
+                    <img src="images/R.png" class="skillcons" alt="r logo">
+                    <img src="images/webdev.png" class="skillcons" alt="html logo">
+                    <img src="images/css.png" class="skillcons" alt="css logo">
+                    <img src="images/js.png" class="skillcons" alt="javascript logo">
+                    <img src="images/json.png" class="skillcons" alt="json logo">
+                    <img src="images/bootstrap.png" class="skillcons" alt="bootstrap logo">
+                    <img src="images/mongodb.png" class="skillcons" alt="mongodb logo">
+                    <img src="images/scipy.png" class="skillcons" alt="scipy logo">
+                    <img src="images/pandas.png" class="skillcons" alt="pandas logo">
                 </div>
             </div>
 
-            <div class="contact">
-                CONTATCT
+            <div class="contacts">
+                <div class="card-3">
+                    <div class="shuffler">
+                        <a class="link" href="https://github.com/DevinJaxues" target="_blank">
+                        <p class="shuffle-link">GitHub</p>
+                        <img src="images/gitcard.png" class="shuffle-picture" alt="pandas logo">
+                        </a>
+                    </div>
+                    <div class="shuffler">
+                        <a class="link" href="https://www.linkedin.com/in/devin-monsen-541054163/" target="_blank">
+                        <p class="shuffle-link">LinkedIn</p>
+                        <img src="images/linked.png" class="shuffle-picture" alt="pandas logo">
+                        </a>
+                    </div>
+                    <div class="shuffler">
+                        <a class="link" href="mailto: monsendevin@gmail.com" target="_blank">
+                        <p class="shuffle-link">Email</p>
+                        <p>monsendevin@gmail.com</p>
+                        <img src="images/email.png" class="shuffle-picture" alt="pandas logo">
+                        </a>
+                    </div>
+                    <div class="shuffler">
+                        <a class="link" href="https://www.instagram.com/jaxues/" target="_blank">
+                        <p class="shuffle-link">Instagram</p>
+                        <img src="images/insta.png" class="shuffle-picture" alt="pandas logo">
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="projects">PROJECTS
@@ -62,9 +88,9 @@
                     var element = document.body;
                     element.classList.toggle("dark-mode");
                     if(element.classList.contains("dark-mode")){
-                        icon.src = "sun.png";
+                        icon.src = "images/sun.png";
                     }else{
-                        icon.src = "moon.png";
+                        icon.src = "images/moon.png";
                     }
                 }
             </script>
