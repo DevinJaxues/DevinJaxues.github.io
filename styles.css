@@ -82,10 +82,15 @@ background-color: var(--primary-color)
     font-size: 110%;
     }
 
+    .link{
+        text-decoration: none;
+        text-align: center;
+    }
+
     .shuffle-picture{
     max-width: 100%;
     max-height: 70%;
-    margin-left: 1%;
+    margin-left: 13%;
     margin-bottom: 4%;
     }
 
@@ -108,7 +113,7 @@ background-color: var(--primary-color)
     color: var(--secondary-color);
     }
 
-    .svg{
+    .cert-image{
         display: none;
     }
 
@@ -190,7 +195,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         grid-template-areas: "about-me skills"
         "contacts projects";
         grid-template-columns: 687px 1fr;
-        grid-template-rows: 400px 1fr;
+        grid-template-rows: 500px 1fr;
         }
 
         .container > div {
@@ -208,7 +213,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         
         .skills {
         grid-area: skills;
-        width: 420%;
+        width: 300%;
         }
 
         #icon {
@@ -265,8 +270,8 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         display: flex;
         margin-top: 5%;
         margin-left: 2%;
-        height: 320px;
-        width: 200px;
+        height: 80%;
+        width: 30%;
         background-color: white;
         border-radius: 10px;
         box-shadow: -1rem 0 3rem #000;
@@ -293,9 +298,14 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
           transition: 0.4s ease-out;
         }
 
+        .shuffle-link{
+            text-align: left;
+            font-size: 120%;
+        }
+
         .shuffle-picture{
-            max-width: 100%;
-            max-height: 70%;
+            width: 80%;
+            height: 70%;
         }
 
         .contacts {
@@ -303,8 +313,8 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         }
 
         .skillcons {
-        max-width: 15%;
-        max-height: 20%;
+        max-width: 17%;
+        max-height: 23%;
         margin-left: 2%;
         margin-right: 2%;
         margin-bottom: 2%;
@@ -339,11 +349,11 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         .typewriter {
         margin-top: 5px;
         margin-bottom: 0px;
-        margin-left: 29%;
-        width: 48%;
+        margin-left: 20%;
+        width: 65%;
         font-weight: 600;
         color: var(--secondary-color);
-        font-size: 200%;
+        font-size: 270%;
         animation: typing 2s steps(21), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
@@ -369,13 +379,14 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         margin-left: 3%;
         text-align: center;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 170%;
         max-width: 95%;
         color: var(--secondary-color);
         }
 
         .certs {
         font-weight: 600;
+        font-size: 160%;
         margin-top: 0px;
         margin-bottom: 3px;
         margin-left: 5px;
@@ -384,13 +395,21 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         }
 
         .cert-link {
-        margin-left: 5%;
+        margin-left: 2%;
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 100%;
+        font-weight: 600%;
+        font-size: 140%;
         display: inline;
         text-decoration: none;
         color: var(--secondary-color);
+        }
+
+        .cert-image{
+            max-width: 25%;
+            max-height: 35%;
+            margin-left: 10%;
+            margin-right: 10%;
         }
         
         a{
