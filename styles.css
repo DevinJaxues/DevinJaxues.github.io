@@ -54,6 +54,41 @@ background-color: var(--primary-color)
     border-radius: 12px;
     }
 
+    .card-3 {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    padding-top: 15px;
+    height: 420px;
+    width: 98%;
+    background-color: rgba(126, 126, 126, 0.856);
+    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    }
+
+    .shuffler {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 4%;
+    height: 47%;
+    width: 45%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    float: left;
+    font-weight: 800%;
+    font-size: 110%;
+    }
+
+    .shuffle-picture{
+        max-width: 100%;
+        max-height: 70%;
+        margin-left: 12%;
+        margin-bottom: 4%;
+    }
+
     .skillcons {
     max-width: 17%;
     max-height: 10%;
@@ -232,6 +267,8 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         transition: 0.4s ease-out;
         position: relative;
         float: left;
+        font-weight: 800%;
+        font-size: 110%;
         }
           
 
@@ -289,7 +326,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
             text-align: center;
             margin-top: 0%;
             font-size: 250%;
-            
+            color: var(--secondary-color);
         }
 
         /* Stylize text and create cursor for typewriter animation */
