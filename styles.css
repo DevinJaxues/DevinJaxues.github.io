@@ -22,9 +22,9 @@ background-color: var(--primary-color)
 @media only screen and (min-device-width: 375px){
 
     #icon {
-    width: 60px;
+    width: 90px;
     cursor: pointer;
-    margin-left: 45%;
+    margin-left: 40%;
     }
 
     h2 {
@@ -83,10 +83,10 @@ background-color: var(--primary-color)
     }
 
     .shuffle-picture{
-        max-width: 100%;
-        max-height: 70%;
-        margin-left: 12%;
-        margin-bottom: 4%;
+    max-width: 100%;
+    max-height: 70%;
+    margin-left: 1%;
+    margin-bottom: 4%;
     }
 
     .skillcons {
@@ -99,7 +99,13 @@ background-color: var(--primary-color)
 
     h1 {
         text-align: center;
+    }
 
+    .skill-h {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 170%;
+    color: var(--secondary-color);
     }
 
     .svg{
