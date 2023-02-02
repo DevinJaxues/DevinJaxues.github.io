@@ -41,7 +41,7 @@ background-color: var(--primary-color)
     width: 98%;
     background-color: rgba(126, 126, 126, 0.856);
     border-radius: 12px;
-    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.6);
+    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.7);
     }
 
     .card-2 {
@@ -51,7 +51,7 @@ background-color: var(--primary-color)
     height: 92%;
     width: 98%;
     background-color: rgba(126, 126, 126, 0.856);
-    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.6);
+    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     }
 
@@ -63,7 +63,7 @@ background-color: var(--primary-color)
     height: 420px;
     width: 98%;
     background-color: rgba(126, 126, 126, 0.856);
-    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.6);
+    box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     }
 
@@ -91,10 +91,17 @@ background-color: var(--primary-color)
     .shuffle-picture{
     max-width: 90%;
     max-height: 60%;
+    min-width: 80%;
+    min-height: 50%;
     margin-left: 20px;
     margin-right: auto;
     margin-bottom: 4%;
     display: block;
+    }
+
+    .shuffle-link{
+        text-align: center;
+        font-size: 120%;
     }
 
     .skillcons {
