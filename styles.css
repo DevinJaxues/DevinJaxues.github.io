@@ -306,7 +306,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         
         .skills {
         grid-area: skills;
-        width: 300%;
+        min-width: 420%;
         }
 
         #icon {
@@ -319,13 +319,13 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
 
         .contacts {
         grid-area: contacts;
-        max-height: 75%;
+        height: 75%;
         }
 
         .projects {
         grid-area: projects;
         max-height: 120%;
-        min-width: 300%;
+        min-width: 420%;
         }
 
         .card-1 {
