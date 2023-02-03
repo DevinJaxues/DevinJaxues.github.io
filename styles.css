@@ -319,12 +319,12 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
 
         .contacts {
         grid-area: contacts;
-        height: 85%;
+        height: 75%;
         }
 
         .projects {
         grid-area: projects;
-        height: 120%;
+        height: 110%;
         width: 300%;
         }
 
