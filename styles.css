@@ -319,13 +319,13 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
 
         .contacts {
         grid-area: contacts;
-        height: 75%;
+        max-height: 75%;
         }
 
         .projects {
         grid-area: projects;
-        height: 110%;
-        width: 300%;
+        max-height: 120%;
+        min-width: 300%;
         }
 
         .card-1 {
@@ -354,7 +354,7 @@ url(//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame);
         margin-right: 1%;
         margin-top: 2%;
         padding-top: 15px;
-        height: 420px;
+        height: 90%;
         width: 98%;
         background-color: rgba(126, 126, 126, 0.856);
         box-shadow: 12px 25px 10px -3px rgba(0, 0, 0, 0.6);
