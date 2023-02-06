@@ -1,142 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="styles.css" />
-        <link href="//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <div class="header">
-            <img src="images/moon.png" id="icon" onClick="darkMode()">
-            <h2>Light/Dark mode</h2>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame" rel="stylesheet" type="text/css"/>
+    <title>Devin Monsen's Portfolio</title>
+</head>
+<body>
+    <div class="stars"></div>
+    <!--About Me Section-->
+    <div class="about-me">
+        <div class="card-1">
+            <h1 class="typewriter">Hi! I'm Devin Monsen.</h1>
+            <p class="description">I'm a Full-Stack developer and certified Data Analyst through the University of Utah. If I'm not coding you can find me reading, exercising or snowboarding!</p>
+        </div>
+    </div>
+
+
+    <!--Certification Section-->
+    <div class="certifications">
+        <div class="cert-card">
+                <h2 class="cert-header">Certifications</h2>
+                <a href="https://www.credly.com/earner/earned/share/68a7d18b-d337-4e2a-b14f-bafbf8eeb179" target="_blank">
+                <img class="cert-image" src="images/Data Cert.jpg" alt="data analytics and visualization cert">
+                </a>
+                <a href="https://www.freecodecamp.org/certification/Jaxues/responsive-web-design" target="_blank">
+                <img class="cert-image" src="images/Responsive Web Design Cert.JPG" alt="responsive web design cert">
+                </a>
+        </div>
+    </div>
+
+    <!--Contact Section-->
+    <div class="contacts">
+        <div class="contact-card">
+            <h2 class="contact-header">Contacts</h2>
+            <div class="contact">
+                <a class="link" href="https://github.com/DevinJaxues" target="_blank">
+                <p class="contact-link">GitHub</p>
+                <img src="images/gitcard.png" class="contact-picture" alt="github logo">
+                </a>
+            </div>
+            <div class="contact">
+                <a class="link" href="https://www.linkedin.com/in/devin-monsen-541054163/" target="_blank">
+                <p class="contact-link">LinkedIn</p>
+                <img src="images/linked.png" class="contact-picture" alt="elinkedin logo">
+                </a>
+            </div>
+            <div class="contact">
+                <a class="link" href="mailto: monsendevin@gmail.com" target="_blank">
+                <p class="contact-link">Email</p>
+                <img src="images/email.png" class="contact-picture" alt="email logo">
+                </a>
+            </div>
+            <div class="contact">
+                <a class="link" href="https://www.instagram.com/jaxues/" target="_blank">
+                <p class="contact-link">Instagram</p>
+                <img src="images/insta.png" class="contact-picture" alt="instagram logo">
+                </a>
+            </div>
         </div>
 
-        <!--About Me Section-->
-        <div class="container">
-            <div class="about-me">
-                <div class="card-1">
-                    <h1 class="typewriter">Hi! I'm Devin Monsen.</h1>
-                    <p class="description">I'm a Full-Stack developer and certified Data Analyst through the University of Utah. If I'm not coding you can find me reading, blogging or snowboarding!</p>
-                    <p class="certs">Links To Certifications:</p>
-                    <a class="link" href="https://www.credly.com/badges/68a7d18b-d337-4e2a-b14f-bafbf8eeb179/linked_in?t=roz46c" target="_blank">
-                    <p class="cert-link"> Data Analytics and Vizualization</p>
+        <!--Project Section-->
+        <div class="projects">
+            <div class="project-table">
+                <h2 class="project-header">Projects</h2>
+                <p class="project-subheader">Find more projects on my GitHub</p>
+                <div class="project-card">
+                    <a href="https://github.com/AndiCam88/final_project" target="_blank">
+                        <img class="project-image" src="images/spotify.jpg" alt="image of my Spotify project webpage">
                     </a>
-                    <a class="link" href="https://www.freecodecamp.org/certification/Jaxues/responsive-web-design" target="_blank">
-                    <p class="cert-link">Responsive Web Design</p>
+                    <div class="heading"> Spotify Supervised Machine Learning Model</div>
+                    <div class="author"> By <span class="name">Devin Monsen, Andi Cameron, Zach Ellsworth, & Jamee Jenkins</span> Dec, 2022</div>
+                    <p class="languages">Jupyter Notebook, JavaScript, SQL, HTML, CSS</p>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/DevinJaxues/Belly_Button_Biodiversity" target="_blank">
+                        <img class="project-image" src="images/bbd.JPG" alt="image of my Bio Diversity Project project webpage">
                     </a>
-                    <img class="cert-image" src="images/data.png" alt="png of data analytics">
-                    <img class="cert-image" src="images/webdesign.png" alt="png of web page">
+                    <div class="heading">Bacteria Biodiversity Interactive Dashboard</div>
+                    <div class="author"> By <span class="name">Devin Monsen</span> Oct, 2022</div>
+                    <p class="languages">JavaScript, HTML, CSS</p>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/DevinJaxues/Mission-To-Mars" target="_blank">
+                        <img class="project-image" src="images/mars.JPG" alt="image of my NASA web scraper project webpage">
+                    </a>
+                    <div class="heading">Mission To Mars Web Scraper Web Page</div>
+                    <div class="author"> By <span class="name">Devin Monsen</span> Sep, 2022</div>
+                    <p class="languages">Jupyter Notebook, Python, HTML</p>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/DevinJaxues/Mapping_Earthquakes" target="_blank">
+                        <img class="project-image" src="images/eqmap.jpg" alt="image of my Leaflet Map project webpage">
+                    </a>
+                    <div class="heading"> GeoJson Leaflet Earthquake Map</div>
+                    <div class="author"> By <span class="name">Devin Monsen</span> Aug, 2022</div>
+                    <p class="languages">JavaScript, HTML, CSS</p>
                 </div>
             </div>
-
-            <!--Skill Section-->
-            <div class="skills">
-                <div class="card-2">
-                    <p class="skill-h">My Skill Set Includes:</p>
-                    <img src="images/git.png" class="skillcons" alt="git logo">
-                    <img src="images/jupyter.png" class="skillcons" alt="jupyter logo">
-                    <img src="images/flask.png" class="skillcons" alt="flask logo">
-                    <img src="images/python.png" class="skillcons" alt="python logo">
-                    <img src="images/R.png" class="skillcons" alt="r logo">
-                    <img src="images/webdev.png" class="skillcons" alt="html logo">
-                    <img src="images/css.png" class="skillcons" alt="css logo">
-                    <img src="images/js.png" class="skillcons" alt="javascript logo">
-                    <img src="images/json.png" class="skillcons" alt="json logo">
-                    <img src="images/bootstrap.png" class="skillcons" alt="bootstrap logo">
-                    <img src="images/mongodb.png" class="skillcons" alt="mongodb logo">
-                    <img src="images/scipy.png" class="skillcons" alt="scipy logo">
-                    <img src="images/pandas.png" class="skillcons" alt="pandas logo">
-                </div>
-            </div>
-
-            <!--Contact Section-->
-            <div class="contacts">
-                <div class="card-3">
-                    <div class="shuffler">
-                        <a class="link" href="https://github.com/DevinJaxues" target="_blank">
-                        <p class="shuffle-link">GitHub</p>
-                        <img src="images/gitcard.png" class="shuffle-picture" alt="pandas logo">
-                        </a>
-                    </div>
-                    <div class="shuffler">
-                        <a class="link" href="https://www.linkedin.com/in/devin-monsen-541054163/" target="_blank">
-                        <p class="shuffle-link">LinkedIn</p>
-                        <img src="images/linked.png" class="shuffle-picture" alt="pandas logo">
-                        </a>
-                    </div>
-                    <div class="shuffler">
-                        <a class="link" href="mailto: monsendevin@gmail.com" target="_blank">
-                        <p class="shuffle-link">Email</p>
-                        <img src="images/email.png" class="shuffle-picture" alt="pandas logo">
-                        </a>
-                    </div>
-                    <div class="shuffler">
-                        <a class="link" href="https://www.instagram.com/jaxues/" target="_blank">
-                        <p class="shuffle-link">Instagram</p>
-                        <img src="images/insta.png" class="shuffle-picture" alt="pandas logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Project Section-->
-            <div class="projects">
-                <div class="card-4">
-                    <p class="skill-h">Projects</p>
-                    <div class="project-card">
-                        <a href="https://github.com/AndiCam88/final_project" target="_blank">
-                            <img class="project-image" src="images/spotify.jpg" alt="image of my Spotify project webpage">
-                        </a>
-                        <div class="heading"> Spotify Supervised Machine Learning Model</div>
-                        <div class="author"> By <span class="name">Devin Monsen, Andi Cameron, Zach Ellsworth, & Jamee Jenkins</span> Dec, 2022</div>
-                        <p class="languages">Jupyter Notebook, JavaScript, SQL, HTML, CSS</p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://github.com/DevinJaxues/Belly_Button_Biodiversity" target="_blank">
-                            <img class="project-image" src="images/bbd.JPG" alt="image of my Bio Diversity Project project webpage">
-                        </a>
-                        <div class="heading">Bacteria Biodiversity Interactive Dashboard</div>
-                        <div class="author"> By <span class="name">Devin Monsen</span> Oct, 2022</div>
-                        <p class="languages">JavaScript, HTML, CSS</p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://github.com/DevinJaxues/Mission-To-Mars" target="_blank">
-                            <img class="project-image" src="images/mars.JPG" alt="image of my NASA web scraper project webpage">
-                        </a>
-                        <div class="heading">Mission To Mars Web Scraper Web Page</div>
-                        <div class="author"> By <span class="name">Devin Monsen</span> Sep, 2022</div>
-                        <p class="languages">Jupyter Notebook, Python, HTML</p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://github.com/DevinJaxues/Mapping_Earthquakes" target="_blank">
-                            <img class="project-image" src="images/eqmap.jpg" alt="image of my Leaflet Map project webpage">
-                        </a>
-                        <div class="heading"> GeoJson Leaflet Earthquake Map</div>
-                        <div class="author"> By <span class="name">Devin Monsen</span> Aug, 2022</div>
-                        <p class="languages">JavaScript, HTML, CSS</p>
-                    </div>
-                </div>
-            </div>
-
-            <!--Create JavaScript Dark/Light Mode toggler-->
-            <script>
-                function darkMode() {
-                    var element = document.body;
-                    element.classList.toggle("dark-mode");
-                    if(element.classList.contains("dark-mode")){
-                        icon.src = "images/sun.png";
-                    }else{
-                        icon.src = "images/moon.png";
-                    }
-                }
-            </script>
         </div>
 
+        <!--Skill Section-->
+        <div class="skills">
+            <div class="skills-card">
+                <h2 class="skills-header">My Skill Set Includes:</h2>
+                <div class="skill-list">
+                    <h2 class="skill-categories">Python</h2>
+                    <p class="sub-skill">Jupyter Notebook</p>
+                    <p class="sub-skill">Pandas</p>
+                    <p class="sub-skill">Machine Learning</p>
+                    <p class="sub-skill">Flask</p>
+                    <p class="sub-skill">scikit-learn</p>
+                    <p class="sub-skill">TensorFlow</p>
+                    <p class="sub-skill">SciPy</p>
+                    <p class="sub-skill">Keras</p>
+                    <p class="sub-skill">MatplotLib</p>
+                    <p class="sub-skill">BeautifulSoup</p>
+                </div>
+                <div class="skill-list">
+                    <h2 class="skill-categories">JavaScript</h2>
+                    <p class="sub-skill">JSON</p>
+                    <p class="sub-skill">D3</p>
+                    <p class="sub-skill">React</p>
+                    <p class="sub-skill">Bootstrap</p>
+                    <p class="sub-skill">Node</p>
+                    <p class="sub-skill">Mocha</p>
+                </div>
+                <div class="skill-list">
+                    <h2 class="skill-categories">HTML</h2>
+                    <p class="sub-skill">Bootstrap</p>
+                    <p class="sub-skill">Desktop Design</p>
+                    <p class="sub-skill">Mobile Design</p>
+                    <p class="sub-skill">JavaScript Implementation</p>
+                    <p class="sub-skill">SEO</p>
+                </div>
+                <div class="skill-list">
+                    <h2 class="skill-categories">CSS</h2>
+                    <p class="sub-skill">Keyframe Animation</p>
+                    <p class="sub-skill">Responsive Web Design</p>
+                    <p class="sub-skill">SASS</p>
+                </div>
+                <div class="skill-center">
+                    <h2 class="skill-categories">Additional Skills</h2>
+                    <p class="sub-skill">R</p>
+                    <p class="sub-skill">PostgreSQL</p>
+                    <p class="sub-skill">GIT</p>
+                    <p class="sub-skill">MongoDB</p>
+                    <p class="sub-skill">Tableau</p>
+                    <p class="sub-skill">PowerBI</p>
+                    <p class="sub-skill">Excel</p>
+                    <p class="sub-skill">VBA</p>
+                    <p class="sub-skill">pgAdmin</p>
+                    <p class="sub-skill">Hadoop</p>
+                    <p class="sub-skill">API Interactions</p>
+                </div>
+            </div>
+        </div>
 
-    </body>
+    </div>
+
+
+    <script src="myscripts.js"></script>
+</body>
 </html>
