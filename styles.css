@@ -138,9 +138,10 @@ body {
 }
 
 .contact-link {
-  margin-top: 70%;
+  position: relative;
+  top: 10%;
   font-size: 100%;
-  text-align: left;
+  text-align: center;
   color: #fff;
 }
 
@@ -149,10 +150,9 @@ a{
 }
 
 .contact-picture {
-  display: inline-block;
-  align-content: center;
+  position: relative;
   margin-top: 5%;
-  height: 20%;
+  height: 30%;
 }
 
 /*Project Section Start*/
