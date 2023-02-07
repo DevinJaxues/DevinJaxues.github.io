@@ -138,9 +138,9 @@ body {
 }
 
 .contact-link {
-  margin-top: 40%;
-  font-size: 130%;
-  text-align: center;
+  margin-top: 70%;
+  font-size: 100%;
+  text-align: left;
   color: #fff;
 }
 
@@ -149,10 +149,10 @@ a{
 }
 
 .contact-picture {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -4%;
-  height: 50%;
+  display: inline-block;
+  align-content: center;
+  margin-top: 5%;
+  height: 20%;
 }
 
 /*Project Section Start*/
@@ -310,7 +310,7 @@ a{
 .certifications {
   position: absolute;
   left: 2%;
-  top: 35%;
+  top: 38%;
   width: 100%;
   height: 40%;
 }
@@ -333,9 +333,10 @@ a{
 }
 
 .cert-image {
-  margin-left: 5%;
+  display: inline-block;
+  margin-left: 7%;
   margin-top: 5%;
-  height: 60%;
+  height: 55%;
 }
 }
 
