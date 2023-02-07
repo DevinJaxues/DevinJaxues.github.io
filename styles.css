@@ -127,29 +127,20 @@ body {
 
 .contact-link {
   margin-top: 40%;
-  font-size: 100%;
+  font-size: 130%;
+  text-align: center;
   color: #fff;
 }
 
 a{
   text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-shadow: 2px 2px 2px #ffffff;
 }
 
 .contact-picture {
-  margin-left: 5%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -4%;
   height: 50%;
-  margin-top: -10%;
-}
-
-.contact-picture:hover {
-  height: 100%;
-  width: auto;
 }
 
 /*Project Section Start*/
@@ -251,7 +242,7 @@ a:hover {
 }
 
 .skills-card{
-  height: 190%;
+  height: 140%;
   margin-top: 10px;
   background-color: rgb(0, 0, 0);
   box-shadow: 35px 35px 15px -3px rgba(0, 0, 0, 0.8);
@@ -275,12 +266,11 @@ a:hover {
 
 .skill-center{
   position: absolute;
-  top: 56%;
+  top: 96%;
   left: 40%;
   height: 75%;
-  width: 20%;
+  width: 60%;
   color: #fff;
-  text-align: center;
 }
 
 .skill-categories {
@@ -288,15 +278,20 @@ a:hover {
   justify-content: space-around;
   margin-top: 4%;
   color: rgb(255, 255, 255);
-  font-size: 100%;
+  font-size: 110%;
   text-decoration: underline;
 }
 
 .sub-skill{
   margin-top: -5%;
   color: rgb(255, 255, 255);
-  text-align: center;
   font-size: 100%;
+  text-align: center;
+}
+
+.extra-skills {
+  margin-top: 1%;
+  text-align: center;
 }
 
 /*Certification Section*/
