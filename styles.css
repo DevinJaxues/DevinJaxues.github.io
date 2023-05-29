@@ -77,10 +77,10 @@ body {
   margin-top: 5px;
   margin-bottom: 2%;
   font-weight: 600;
-  margin-left: 45px;
-  width: 250px;
+  margin-left: 50px;
+  width: 75%;
   color: white;
-  font-size: 25px;
+  font-size: 23px;
   animation: typing 2s steps(21), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
